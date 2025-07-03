@@ -6,7 +6,7 @@ import type { CoordinatePoint } from "../data/types";
 export const Map = ({ coordinates }: { coordinates: CoordinatePoint[] }) => {
   return (
     <div className="relative flex">
-      <img src={mapSrc} alt="world-map" className="w-1024 h-768" />
+      <img src={mapSrc} alt="world-map" className="shrink-0 w-1024 h-768" />
       <Points coordinates={coordinates} />
     </div>
   );

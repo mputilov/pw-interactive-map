@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "https://mputilov.github.io/PW_Interective_Map/",
+  base: "https://mputilov.github.io/pw-interactive-map/",
   plugins: [react(), tailwindcss()],
 });
