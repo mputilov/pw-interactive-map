@@ -82,12 +82,12 @@ const TierGroups = ({
                   />
                   <img
                     src={item.image}
-                    alt={item.name}
+                    alt={item.ukrName}
                     className="size-32 object-contain"
                   />
                   {view === "list" && (
                     <span className="text-sm text-primary-content">
-                      {item.name}
+                      {item.ukrName}
                     </span>
                   )}
                 </label>

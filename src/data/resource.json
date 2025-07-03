@@ -6,6 +6,7 @@
     "href": "https://www.pwdatabase.com/mine/3074",
     "tier": "1",
     "name": "Необработанная древесина",
+    "ukrName": "Необробленна деревина",
     "image": "https://www.pwdatabase.com/images/icons/generalm/795.png"
   },
   {
@@ -15,15 +16,17 @@
     "href": "https://www.pwdatabase.com/mine/3075",
     "tier": "2",
     "name": "Пиломатериалы",
+    "ukrName": "Пиломатеріали",
     "image": "https://www.pwdatabase.com/images/icons/generalm/796.png"
   },
-  {
+  { 
     "id": "3076",
     "resource": "Древесина",
     "source_name": "Ивовый пень",
     "href": "https://www.pwdatabase.com/mine/3076",
     "tier": "3",
     "name": "Очищенная древесина",
+    "ukrName": "Очищена деревина",
     "image": "https://www.pwdatabase.com/images/icons/generalm/797.png"
   },
   {
@@ -33,6 +36,7 @@
     "href": "https://www.pwdatabase.com/mine/3077",
     "tier": "4",
     "name": "Качественная древесина",
+    "ukrName": "Якісна деревина",
     "image": "https://www.pwdatabase.com/images/icons/generalm/798.png"
   },
   {
@@ -42,6 +46,7 @@
     "href": "https://www.pwdatabase.com/mine/3079",
     "tier": "1",
     "name": "Железо",
+    "ukrName": "Залізо",
     "image": "https://www.pwdatabase.com/images/icons/generalm/800.png"
   },
   {
@@ -51,6 +56,7 @@
     "href": "https://www.pwdatabase.com/mine/3080",
     "tier": "2",
     "name": "Высокоуглеродистая сталь",
+    "ukrName": "Високовуглецева сталь",
     "image": "https://www.pwdatabase.com/images/icons/generalm/801.png"
   },
   {
@@ -60,6 +66,7 @@
     "href": "https://www.pwdatabase.com/mine/3081",
     "tier": "3",
     "name": "Закаленная сталь",
+    "ukrName": "Гартована сталь",
     "image": "https://www.pwdatabase.com/images/icons/generalm/802.png"
   },
   {
@@ -69,6 +76,7 @@
     "href": "https://www.pwdatabase.com/mine/3082",
     "tier": "4",
     "name": "Сплавленная сталь",
+    "ukrName": "Сплавлена сталь",
     "image": "https://www.pwdatabase.com/images/icons/generalm/803.png"
   },
   {
@@ -78,6 +86,7 @@
     "href": "https://www.pwdatabase.com/mine/3084",
     "tier": "1",
     "name": "Гравий",
+    "ukrName": "Гравій",
     "image": "https://www.pwdatabase.com/images/icons/generalm/805.png"
   },
   {
@@ -87,6 +96,7 @@
     "href": "https://www.pwdatabase.com/mine/3085",
     "tier": "2",
     "name": "Дробленый камень",
+    "ukrName": "Дроблений камінь",
     "image": "https://www.pwdatabase.com/images/icons/generalm/806.png"
   },
   {
@@ -96,6 +106,7 @@
     "href": "https://www.pwdatabase.com/mine/3086",
     "tier": "3",
     "name": "Шлифовальный порошок",
+    "ukrName": "Шліфувальний порошок",
     "image": "https://www.pwdatabase.com/images/icons/generalm/807.png"
   },
   {
@@ -105,6 +116,7 @@
     "href": "https://www.pwdatabase.com/mine/3087",
     "tier": "4",
     "name": "Алмазный порошок",
+    "ukrName": "Алмазний порошок",
     "image": "https://www.pwdatabase.com/images/icons/generalm/808.png"
   },
   {
@@ -114,6 +126,7 @@
     "href": "https://www.pwdatabase.com/mine/3089",
     "tier": "1",
     "name": "Угольный порошок",
+    "ukrName": "Вугільний порошок",
     "image": "https://www.pwdatabase.com/images/icons/generalm/815.png"
   },
   {
@@ -123,6 +136,7 @@
     "href": "https://www.pwdatabase.com/mine/3090",
     "tier": "2",
     "name": "Древесный уголь",
+    "ukrName": "Деревне вугілля",
     "image": "https://www.pwdatabase.com/images/icons/generalm/816.png"
   },
   {
@@ -132,6 +146,7 @@
     "href": "https://www.pwdatabase.com/mine/3091",
     "tier": "3",
     "name": "Каменный уголь",
+    "ukrName": "Кам'яне вугілля",
     "image": "https://www.pwdatabase.com/images/icons/generalm/817.png"
   },
   {
@@ -141,6 +156,7 @@
     "href": "https://www.pwdatabase.com/mine/3092",
     "tier": "4",
     "name": "Углеродное топливо",
+    "ukrName": "Вуглецеве паливо",
     "image": "https://www.pwdatabase.com/images/icons/generalm/818.png"
   },
   {
@@ -150,6 +166,7 @@
     "href": "https://www.pwdatabase.com/mine/3095",
     "tier": "1",
     "name": "Нектар",
+    "ukrName": "Нектар",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1830.png"
   },
   {
@@ -159,6 +176,7 @@
     "href": "https://www.pwdatabase.com/mine/3103",
     "tier": "1",
     "name": "Шалфей",
+    "ukrName": "Трава Емменагога",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1823.png"
   },
   {
@@ -168,6 +186,7 @@
     "href": "https://www.pwdatabase.com/mine/3536",
     "tier": "1",
     "name": "Агератум",
+    "ukrName": "Агератум",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1837.png"
   },
   {
@@ -177,6 +196,7 @@
     "href": "https://www.pwdatabase.com/mine/3098",
     "tier": "1",
     "name": "Молочай",
+    "ukrName": "Молочай",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1844.png"
   },
   {
@@ -186,6 +206,7 @@
     "href": "https://www.pwdatabase.com/mine/3540",
     "tier": "2",
     "name": "Трава Призраков",
+    "ukrName": "Трава Привидів",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1824.png"
   },
   {
@@ -195,6 +216,7 @@
     "href": "https://www.pwdatabase.com/mine/3102",
     "tier": "2",
     "name": "Бузина",
+    "ukrName": "Бузина",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1820.png"
   },
   {
@@ -204,6 +226,7 @@
     "href": "https://www.pwdatabase.com/mine/3542",
     "tier": "2",
     "name": "Ми Сян",
+    "ukrName": "Мі Сян",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1838.png"
   },
   {
@@ -213,6 +236,7 @@
     "href": "https://www.pwdatabase.com/mine/3535",
     "tier": "2",
     "name": "Мышьяк",
+    "ukrName": "Миш'як",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1834.png"
   },
   {
@@ -222,6 +246,7 @@
     "href": "https://www.pwdatabase.com/mine/3099",
     "tier": "2",
     "name": "Конский каштан",
+    "ukrName": "Кінський каштан",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1845.png"
   },
   {
@@ -231,6 +256,7 @@
     "href": "https://www.pwdatabase.com/mine/3096",
     "tier": "2",
     "name": "Водный каштан",
+    "ukrName": "Водяний каштан",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1831.png"
   },
   {
@@ -240,6 +266,7 @@
     "href": "https://www.pwdatabase.com/mine/3545",
     "tier": "2",
     "name": "Репейник",
+    "ukrName": "Реп'ях",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1825.png"
   },
   {
@@ -249,6 +276,7 @@
     "href": "https://www.pwdatabase.com/mine/3100",
     "tier": "3",
     "name": "Белена",
+    "ukrName": "Белена",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1846.png"
   },
   {
@@ -258,6 +286,7 @@
     "href": "https://www.pwdatabase.com/mine/3097",
     "tier": "3",
     "name": "Шоу У",
+    "ukrName": "Шоу У",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1832.png"
   },
   {
@@ -267,6 +296,7 @@
     "href": "https://www.pwdatabase.com/mine/3537",
     "tier": "3",
     "name": "Зеленая слива",
+    "ukrName": "Зелена слива",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1850.png"
   },
   {
@@ -276,6 +306,7 @@
     "href": "https://www.pwdatabase.com/mine/3546",
     "tier": "3",
     "name": "Орлиное дерево",
+    "ukrName": "Орлине дерево",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1839.png"
   },
   {
@@ -285,6 +316,7 @@
     "href": "https://www.pwdatabase.com/mine/3539",
     "tier": "3",
     "name": "Темно-синяя мазь",
+    "ukrName": "Темно-синя мазь",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1821.png"
   },
   {
@@ -294,6 +326,7 @@
     "href": "https://www.pwdatabase.com/mine/3548",
     "tier": "3",
     "name": "Змеиная трава",
+    "ukrName": "Зміїна трава",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1826.png"
   },
   {
@@ -303,6 +336,7 @@
     "href": "https://www.pwdatabase.com/mine/3541",
     "tier": "3",
     "name": "Безоар",
+    "ukrName": "Безоар",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1835.png"
   },
   {
@@ -312,6 +346,7 @@
     "href": "https://www.pwdatabase.com/mine/3549",
     "tier": "4",
     "name": "Тюльпан",
+    "ukrName": "Тюльпан",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1840.png"
   },
   {
@@ -321,6 +356,7 @@
     "href": "https://www.pwdatabase.com/mine/3101",
     "tier": "4",
     "name": "Пьянящая роса бессмертия",
+    "ukrName": "П'янка роса безсмертя",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1857.png"
   },
   {
@@ -330,6 +366,7 @@
     "href": "https://www.pwdatabase.com/mine/3094",
     "tier": "4",
     "name": "Древесная бабочка",
+    "ukrName": "Деревний метелик",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1848.png"
   },
   {
@@ -339,6 +376,7 @@
     "href": "https://www.pwdatabase.com/mine/3550",
     "tier": "4",
     "name": "Трава тигрового уха",
+    "ukrName": "Трава тигрового вуха",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1827.png"
   },
   {
@@ -348,6 +386,7 @@
     "href": "https://www.pwdatabase.com/mine/3543",
     "tier": "4",
     "name": "Красная слива",
+    "ukrName": "Червона слива",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1851.png"
   },
   {
@@ -357,6 +396,7 @@
     "href": "https://www.pwdatabase.com/mine/3538",
     "tier": "4",
     "name": "Палочник",
+    "ukrName": "Паличник",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1854.png"
   }
 ]
