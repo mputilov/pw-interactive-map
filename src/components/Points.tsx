@@ -3,18 +3,21 @@ import { CoordinatePoint } from "../data/types";
 
 import clsx from "clsx";
 
-const oz = 4;
-const ox = 1470;
-const size_x = 1024;
-const shift_x = 234;
-const size_y = 768;
-const r = 0.695;
+const PARAMETERS_MAP = {
+  world: { ox: 1470, oz: 4, size_x: 1024, shift_x: 234, size_y: 768, r: 0.695 },
+  a21: { ox: 215, oz: -397, size_x: 1024, shift_x: 0, size_y: 768, r: 2.5 },
+  a22: { ox: 206, oz: -398, size_x: 1024, shift_x: 0, size_y: 768, r: 2.53 },
+};
 
 const PointComponent = ({
   x,
   y,
+  mapParameters: { ox, oz, size_x, shift_x, size_y, r },
   onClick,
-}: CoordinatePoint & { onClick: (coords: string) => void }) => {
+}: CoordinatePoint & {
+  onClick: (coords: string) => void;
+  mapParameters: (typeof PARAMETERS_MAP)[keyof typeof PARAMETERS_MAP];
+}) => {
   const stringValue = `${Math.round(x)} ${Math.round(y)}`;
   return (
     <div
@@ -39,7 +42,13 @@ const PointComponent = ({
   );
 };
 
-export const Points = ({ coordinates }: { coordinates: CoordinatePoint[] }) => {
+export const Points = ({
+  coordinates,
+  mapId,
+}: {
+  coordinates: CoordinatePoint[];
+  mapId: keyof typeof PARAMETERS_MAP;
+}) => {
   const [toast, setToast] = useState<string | null>(null);
 
   const handlePointClick = (coords: string) => {
@@ -47,6 +56,14 @@ export const Points = ({ coordinates }: { coordinates: CoordinatePoint[] }) => {
     setTimeout(() => setToast(null), 2000);
   };
 
+  const mapParameters = PARAMETERS_MAP[mapId];
+
+  console.log(
+    "Rendering Points for map:",
+    mapId,
+    "with parameters:",
+    mapParameters
+  );
   return (
     <div className="absolute inset-0">
       {coordinates.map((coordinates, idx) => {
@@ -55,6 +72,7 @@ export const Points = ({ coordinates }: { coordinates: CoordinatePoint[] }) => {
             key={idx}
             x={coordinates.x}
             y={coordinates.y}
+            mapParameters={PARAMETERS_MAP[mapId]}
             onClick={handlePointClick}
           />
         );

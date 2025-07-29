@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import type { ResourcesByTier, ResourceItem } from "../data/types";
+import type { ResourcesByTier, ResourceItem } from "../../data/types";
 
 type FiltersProps = {
   resourcesByTier: ResourcesByTier;
@@ -47,7 +47,7 @@ const TierGroups = ({
         <div key={tier}>
           <div className="flex items-center gap-4 mb-4">
             <label className="cursor-pointer">
-              <h3 className="text-base font-bold">Tier {tier}</h3>
+              <h4 className="text-sm font-bold">Tier {tier}</h4>
               <input
                 type="checkbox"
                 ref={tierCheckboxRef}
@@ -76,14 +76,14 @@ const TierGroups = ({
                 >
                   <input
                     type="checkbox"
-                    className="checkbox checkbox-sm checkbox-accent"
+                    className="checkbox checkbox-sm"
                     checked={selected.includes(id)}
                     onChange={(e) => onChange(id, e.target.checked)}
                   />
                   <img
                     src={item.image}
                     alt={item.ukrName}
-                    className="size-32 object-contain"
+                    className="size-26 object-contain"
                   />
                   {view === "list" && (
                     <span className="text-sm text-primary-content">
@@ -113,7 +113,7 @@ export const Filters = ({
   if (!open) {
     return (
       <button
-        className="fixed w-272 left-6 top-4 z-30 btn btn-primary"
+        className="fixed w-265 left-0 top-0 z-30 btn rounded-t-none"
         onClick={() => setOpen(true)}
       >
         Відкрити фільтри
@@ -122,17 +122,17 @@ export const Filters = ({
   }
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-300 overflow-y-auto bg-base-300 shadow-lg z-20 p-6 border-r border-gray-200">
-      <div className="absolute top-4 left-190 flex gap-2 z-30">
+    <aside className="fixed max-h-full left-0 top-0 w-265 overflow-y-auto bg-base-300 shadow-lg z-20 p-10 rounded-b-box">
+      <div className="absolute top-10 right-10 flex gap-2 z-30">
         <button
-          className="btn btn-primary"
+          className="btn btn-outline btn-sm"
           onClick={() => setView(view === "list" ? "grid" : "list")}
           aria-label="Змінити вигляд фільтрів"
         >
           {view === "list" ? "📋" : "🔲"}
         </button>
         <button
-          className="btn btn-primary"
+          className="btn btn-outline btn-sm"
           onClick={() => setOpen(false)}
           aria-label="Закрити фільтри"
         >
@@ -141,7 +141,9 @@ export const Filters = ({
       </div>
       <div className="space-y-12">
         <div>
-          <h2 className="text-lg font-bold mb-6 text-yellow-700">Ресурси</h2>
+          <div>
+            <h2 className="text-lg font-bold mb-6 text-yellow-700">Ресурси</h2>
+          </div>
           <TierGroups
             data={resourcesByTier}
             resourceMap={resourceMap}
