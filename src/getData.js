@@ -156,14 +156,19 @@ async function main() {
     let allResults = [];
     for (let i = 0; i < resources.length; i++) {
       let resourceResults = await parseResource(resources[i]);
-      // Filter out items with tier '5', name '-', or missing image
+      // Filter out items with name '-' or missing image, but keep tier 5
       resourceResults = resourceResults.filter(
-        (item) => item.tier !== "5" && item.name !== "-" && item.image
+        (item) => item.name !== "-" && item.image
       );
       allResults = allResults.concat(resourceResults);
     }
-    // Group and write resource_by_tier.json (omit 'Травы' and use only IDs)
-    const nonWeeds = allResults.filter((item) => item.resource !== "Травы");
+
+    // Separate tier 5 and non-tier 5 items
+    const tier5Items = allResults.filter((item) => item.tier === "5");
+    const nonTier5Items = allResults.filter((item) => item.tier !== "5");
+
+    // Group and write resource_by_tier.json (omit 'Травы' and tier 5, use only IDs)
+    const nonWeeds = nonTier5Items.filter((item) => item.resource !== "Травы");
     const resourceByTier = groupByTier(
       nonWeeds.map((item) => ({ tier: item.tier, id: item.id }))
     );
@@ -176,8 +181,9 @@ async function main() {
       "data/resource_by_tier.json",
       JSON.stringify(resourceByTierIds, null, 2)
     );
-    // Group and write weeds_by_tier.json (only 'Травы' and use only IDs)
-    const weeds = allResults.filter((item) => item.resource === "Травы");
+
+    // Group and write weeds_by_tier.json (only 'Травы' excluding tier 5, use only IDs)
+    const weeds = nonTier5Items.filter((item) => item.resource === "Травы");
     const weedsByTier = groupByTier(
       weeds.map((item) => ({ tier: item.tier, id: item.id }))
     );
@@ -190,23 +196,84 @@ async function main() {
       "data/weeds_by_tier.json",
       JSON.stringify(weedsByTierIds, null, 2)
     );
-    // Write resource.json (all items, omit coordinates property)
-    const resourceJson = allResults.map(({ coordinates: _, ...rest }) => rest);
+
+    // Write resource_tier5.json (all tier 5 items, omit coordinates property)
+    const tier5ResourceJson = tier5Items.map(
+      ({ coordinates: _, ...rest }) => rest
+    );
+    fs.writeFileSync(
+      "data/resource_tier5.json",
+      JSON.stringify(tier5ResourceJson, null, 2)
+    );
+
+    // Write resources_tier5.json (only tier 5 resources, use only IDs)
+    const tier5Resources = tier5Items.filter(
+      (item) => item.resource !== "Травы"
+    );
+    const tier5ResourcesIds = tier5Resources.map((item) => item.id);
+    fs.writeFileSync(
+      "data/resources_tier5.json",
+      JSON.stringify(tier5ResourcesIds, null, 2)
+    );
+
+    // Write weeds_tier5.json (only tier 5 weeds, use only IDs)
+    const tier5Weeds = tier5Items.filter((item) => item.resource === "Травы");
+    const tier5WeedsIds = tier5Weeds.map((item) => item.id);
+    fs.writeFileSync(
+      "data/weeds_tier5.json",
+      JSON.stringify(tier5WeedsIds, null, 2)
+    );
+
+    // Write coordinates_tier5.json (separate a21 and a22 objects with coordinates)
+    const a21Coordinates = {};
+    const a22Coordinates = {};
+
+    tier5Items.forEach((item) => {
+      if (item.coordinates?.a21) {
+        a21Coordinates[item.id] = item.coordinates.a21;
+      }
+      if (item.coordinates?.a22) {
+        a22Coordinates[item.id] = item.coordinates.a22;
+      }
+    });
+
+    const tier5CoordinatesOutput = {
+      a21: a21Coordinates,
+      a22: a22Coordinates,
+    };
+
+    fs.writeFileSync(
+      "data/coordinates_tier5.json",
+      JSON.stringify(tier5CoordinatesOutput, null, 2)
+    );
+
+    // Write resource.json (non-tier 5 items, omit coordinates property)
+    const resourceJson = nonTier5Items.map(
+      ({ coordinates: _, ...rest }) => rest
+    );
     fs.writeFileSync(
       "data/resource.json",
       JSON.stringify(resourceJson, null, 2)
     );
-    // Write coordinates.json (id: coordinates.world)
+
+    // Write coordinates.json (id: coordinates.world for non-tier 5 items)
     const coordinatesJson = Object.fromEntries(
-      allResults.map((item) => [item.id, item.coordinates?.world ?? []])
+      nonTier5Items.map((item) => [item.id, item.coordinates?.world ?? []])
     );
     fs.writeFileSync(
       "data/coordinates.json",
       JSON.stringify(coordinatesJson, null, 2)
     );
-    console.log(
-      "Output saved to data/resource_by_tier.json, data/weeds_by_tier.json, data/resource.json, and data/coordinates.json"
-    );
+
+    console.log("Output saved to:");
+    console.log("- data/resource_by_tier.json (tiers 1-4 resources)");
+    console.log("- data/weeds_by_tier.json (tiers 1-4 weeds)");
+    console.log("- data/resource.json (tiers 1-4 all items)");
+    console.log("- data/coordinates.json (tiers 1-4 coordinates)");
+    console.log("- data/resources_tier5.json (tier 5 all items)");
+    console.log("- data/resources_tier5.json (tier 5 resources IDs)");
+    console.log("- data/weeds_tier5.json (tier 5 weeds IDs)");
+    console.log("- data/coordinates_tier5.json (tier 5 coordinates)");
   } catch (err) {
     console.error("Error:", err.message);
     process.exit(1);

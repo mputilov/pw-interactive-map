@@ -27,3 +27,10 @@ export type CoordinatePoint = {
 export type CoordinatesMap = {
   [id: string]: CoordinatePoint[];
 };
+
+export type Data = {
+  coordinates: CoordinatesMap;
+  resource_by_tier: ResourcesByTier;
+  weeds_by_tier: ResourcesByTier;
+  resource_list: ResourceList;
+};
