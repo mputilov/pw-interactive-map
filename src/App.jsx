@@ -1,45 +1,57 @@
 import "./App.css";
-import { Map } from "./components/Map";
+import { MapWorld } from "./components/MapWorld";
+import { MapHell } from "./components/MapHell";
+import { MapHeaven } from "./components/MapHeaven";
 import { Filters } from "./components/Filters";
-import { data } from "./data/data";
-import React, { useState, useMemo } from "react";
+import { useState } from "react";
+
+const MAP_OPTIONS = {
+  world: {
+    component: MapWorld,
+    label: "Світ",
+  },
+  heaven: {
+    component: MapHeaven,
+    label: "Небеса",
+  },
+  hell: {
+    component: MapHell,
+    label: "Пекло",
+  },
+};
 
 function App() {
-  // State for selected resource IDs
-  const [selectedResources, setSelectedResources] = useState([]);
+  const [selectedMap, setSelectedMap] = useState("world");
 
-  // Build a lookup map for resource details
-  const resourceMap = useMemo(() => {
-    const map = {};
-    for (const item of data.resource_list) {
-      map[item.id] = item;
-    }
-    return map;
-  }, []);
-
-  // Compute coordinates to render based on selected resources
-  const filteredCoordinates = useMemo(() => {
-    if (selectedResources.length === 0) return [];
-    return selectedResources.map((id) => data.coordinates[id] || []).flat();
-  }, [selectedResources]);
-
-  // Callback for Filters
-  const handleFilterChange = (id, checked) => {
-    setSelectedResources((prev) =>
-      checked ? [...prev, id] : prev.filter((rid) => rid !== id)
-    );
+  const renderSelectedMap = () => {
+    const MapComponent = MAP_OPTIONS[selectedMap]?.component;
+    return <MapComponent />;
   };
 
   return (
     <div className="flex justify-around w-full">
-      <Filters
-        resourcesByTier={data.resource_by_tier}
-        weedsByTier={data.weeds_by_tier}
-        resourceMap={resourceMap}
-        selected={selectedResources}
-        onChange={handleFilterChange}
-      />
-      <Map coordinates={filteredCoordinates} />
+      <ul className="bg-base-200 rounded-box fixed top-10 right-10 z-1">
+        {Object.entries(MAP_OPTIONS).map(([key, { label }]) => (
+          <li
+            key={key}
+            className="border-b-1 border-base-content last:border-transparent hover:bg-base-300 first:rounded-t-box last:rounded-b-box"
+          >
+            <label className="flex items-center gap-8 p-10">
+              <input
+                type="radio"
+                name="map"
+                value={key}
+                checked={selectedMap === key}
+                onChange={(e) => setSelectedMap(e.target.value)}
+                className="radio"
+              />
+              <span className="text-sm font-bold">{label}</span>
+            </label>
+          </li>
+        ))}
+      </ul>
+
+      {renderSelectedMap()}
     </div>
   );
 }
