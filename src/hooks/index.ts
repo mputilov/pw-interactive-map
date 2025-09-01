@@ -1,0 +1,1 @@
+export { useUrlParam } from "./useUrlParam";

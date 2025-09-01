@@ -3,7 +3,7 @@ import { MapWorld } from "./components/MapWorld";
 import { MapHell } from "./components/MapHell";
 import { MapHeaven } from "./components/MapHeaven";
 import { Filters } from "./components/Filters";
-import { useState } from "react";
+import { useUrlParam } from "./hooks";
 
 const MAP_OPTIONS = {
   world: {
@@ -21,7 +21,7 @@ const MAP_OPTIONS = {
 };
 
 function App() {
-  const [selectedMap, setSelectedMap] = useState("world");
+  const [selectedMap, setSelectedMap] = useUrlParam("map", "world");
 
   const renderSelectedMap = () => {
     const MapComponent = MAP_OPTIONS[selectedMap]?.component;
