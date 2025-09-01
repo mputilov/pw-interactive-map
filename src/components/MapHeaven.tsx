@@ -1,7 +1,8 @@
 import { Map } from "./Map";
 import { Filters } from "./Filters";
 import { useFilters } from "./Filters/useFilters";
-import { data } from "../data/tier5/data";
+import { data } from "../data/data";
+import { omit } from "../utils";
 
 const HEAVEN_ID = "a21"; // Assuming a21 is the ID for the Heaven map
 
@@ -11,13 +12,16 @@ export const MapHeaven = () => {
     resourceMap,
     filteredCoordinates,
     handleFilterChange,
-  } = useFilters({ ...data, coordinates: data.coordinates[HEAVEN_ID] });
+  } = useFilters({
+    resource_list: data.resource_list,
+    coordinates: data.heaven_coordinates,
+  });
 
   return (
     <div className="flex justify-around w-full">
       <Filters
-        resourcesByTier={data.resource_by_tier}
-        weedsByTier={data.weeds_by_tier}
+        resourcesByTier={omit(data.resource_by_tier, ["1", "2", "3"])}
+        weedsByTier={omit(data.weeds_by_tier, ["1", "2", "3"])}
         resourceMap={resourceMap}
         selected={selectedResources}
         onChange={handleFilterChange}

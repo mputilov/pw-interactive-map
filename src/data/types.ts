@@ -30,6 +30,8 @@ export type CoordinatesMap = {
 
 export type Data = {
   coordinates: CoordinatesMap;
+  heaven_coordinates: CoordinatesMap;
+  hell_coordinates: CoordinatesMap;
   resource_by_tier: ResourcesByTier;
   weeds_by_tier: ResourcesByTier;
   resource_list: ResourceList;

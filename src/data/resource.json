@@ -10,36 +10,6 @@
     "image": "https://www.pwdatabase.com/images/icons/generalm/795.png"
   },
   {
-    "id": "3075",
-    "resource": "Древесина",
-    "source_name": "Старый древесный ствол",
-    "href": "https://www.pwdatabase.com/mine/3075",
-    "tier": "2",
-    "name": "Пиломатериалы",
-    "ukrName": "Пиломатеріали",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/796.png"
-  },
-  { 
-    "id": "3076",
-    "resource": "Древесина",
-    "source_name": "Ивовый пень",
-    "href": "https://www.pwdatabase.com/mine/3076",
-    "tier": "3",
-    "name": "Очищенная древесина",
-    "ukrName": "Очищена деревина",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/797.png"
-  },
-  {
-    "id": "3077",
-    "resource": "Древесина",
-    "source_name": "Грушевый брус",
-    "href": "https://www.pwdatabase.com/mine/3077",
-    "tier": "4",
-    "name": "Качественная древесина",
-    "ukrName": "Якісна деревина",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/798.png"
-  },
-  {
     "id": "3079",
     "resource": "Металл",
     "source_name": "Железная руда",
@@ -48,36 +18,6 @@
     "name": "Железо",
     "ukrName": "Залізо",
     "image": "https://www.pwdatabase.com/images/icons/generalm/800.png"
-  },
-  {
-    "id": "3080",
-    "resource": "Металл",
-    "source_name": "Черное железо",
-    "href": "https://www.pwdatabase.com/mine/3080",
-    "tier": "2",
-    "name": "Высокоуглеродистая сталь",
-    "ukrName": "Високовуглецева сталь",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/801.png"
-  },
-  {
-    "id": "3081",
-    "resource": "Металл",
-    "source_name": "Ферромарганцевая руда",
-    "href": "https://www.pwdatabase.com/mine/3081",
-    "tier": "3",
-    "name": "Закаленная сталь",
-    "ukrName": "Гартована сталь",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/802.png"
-  },
-  {
-    "id": "3082",
-    "resource": "Металл",
-    "source_name": "Магнитный железняк",
-    "href": "https://www.pwdatabase.com/mine/3082",
-    "tier": "4",
-    "name": "Сплавленная сталь",
-    "ukrName": "Сплавлена сталь",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/803.png"
   },
   {
     "id": "3084",
@@ -90,36 +30,6 @@
     "image": "https://www.pwdatabase.com/images/icons/generalm/805.png"
   },
   {
-    "id": "3085",
-    "resource": "Камень",
-    "source_name": "Каменоломня",
-    "href": "https://www.pwdatabase.com/mine/3085",
-    "tier": "2",
-    "name": "Дробленый камень",
-    "ukrName": "Дроблений камінь",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/806.png"
-  },
-  {
-    "id": "3086",
-    "resource": "Камень",
-    "source_name": "Карьер точильного камня",
-    "href": "https://www.pwdatabase.com/mine/3086",
-    "tier": "3",
-    "name": "Шлифовальный порошок",
-    "ukrName": "Шліфувальний порошок",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/807.png"
-  },
-  {
-    "id": "3087",
-    "resource": "Камень",
-    "source_name": "Алмазный карьер",
-    "href": "https://www.pwdatabase.com/mine/3087",
-    "tier": "4",
-    "name": "Алмазный порошок",
-    "ukrName": "Алмазний порошок",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/808.png"
-  },
-  {
     "id": "3089",
     "resource": "Источники энергии",
     "source_name": "Залежи крупного угля",
@@ -128,36 +38,6 @@
     "name": "Угольный порошок",
     "ukrName": "Вугільний порошок",
     "image": "https://www.pwdatabase.com/images/icons/generalm/815.png"
-  },
-  {
-    "id": "3090",
-    "resource": "Источники энергии",
-    "source_name": "Залежи угля",
-    "href": "https://www.pwdatabase.com/mine/3090",
-    "tier": "2",
-    "name": "Древесный уголь",
-    "ukrName": "Деревне вугілля",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/816.png"
-  },
-  {
-    "id": "3091",
-    "resource": "Источники энергии",
-    "source_name": "Угольный пласт",
-    "href": "https://www.pwdatabase.com/mine/3091",
-    "tier": "3",
-    "name": "Каменный уголь",
-    "ukrName": "Кам'яне вугілля",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/817.png"
-  },
-  {
-    "id": "3092",
-    "resource": "Источники энергии",
-    "source_name": "Залежи вулканического угля",
-    "href": "https://www.pwdatabase.com/mine/3092",
-    "tier": "4",
-    "name": "Углеродное топливо",
-    "ukrName": "Вуглецеве паливо",
-    "image": "https://www.pwdatabase.com/images/icons/generalm/818.png"
   },
   {
     "id": "3095",
@@ -198,6 +78,46 @@
     "name": "Молочай",
     "ukrName": "Молочай",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1844.png"
+  },
+  {
+    "id": "3075",
+    "resource": "Древесина",
+    "source_name": "Старый древесный ствол",
+    "href": "https://www.pwdatabase.com/mine/3075",
+    "tier": "2",
+    "name": "Пиломатериалы",
+    "ukrName": "Пиломатеріали",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/796.png"
+  },
+  {
+    "id": "3080",
+    "resource": "Металл",
+    "source_name": "Черное железо",
+    "href": "https://www.pwdatabase.com/mine/3080",
+    "tier": "2",
+    "name": "Высокоуглеродистая сталь",
+    "ukrName": "Високовуглецева сталь",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/801.png"
+  },
+  {
+    "id": "3085",
+    "resource": "Камень",
+    "source_name": "Каменоломня",
+    "href": "https://www.pwdatabase.com/mine/3085",
+    "tier": "2",
+    "name": "Дробленый камень",
+    "ukrName": "Дроблений камінь",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/806.png"
+  },
+  {
+    "id": "3090",
+    "resource": "Источники энергии",
+    "source_name": "Залежи угля",
+    "href": "https://www.pwdatabase.com/mine/3090",
+    "tier": "2",
+    "name": "Древесный уголь",
+    "ukrName": "Деревне вугілля",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/816.png"
   },
   {
     "id": "3540",
@@ -270,6 +190,46 @@
     "image": "https://www.pwdatabase.com/images/icons/generalm/1825.png"
   },
   {
+    "id": "3076",
+    "resource": "Древесина",
+    "source_name": "Ивовый пень",
+    "href": "https://www.pwdatabase.com/mine/3076",
+    "tier": "3",
+    "name": "Очищенная древесина",
+    "ukrName": "Очищена деревина",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/797.png"
+  },
+  {
+    "id": "3081",
+    "resource": "Металл",
+    "source_name": "Ферромарганцевая руда",
+    "href": "https://www.pwdatabase.com/mine/3081",
+    "tier": "3",
+    "name": "Закаленная сталь",
+    "ukrName": "Гартована сталь",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/802.png"
+  },
+  {
+    "id": "3086",
+    "resource": "Камень",
+    "source_name": "Карьер точильного камня",
+    "href": "https://www.pwdatabase.com/mine/3086",
+    "tier": "3",
+    "name": "Шлифовальный порошок",
+    "ukrName": "Шліфувальний порошок",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/807.png"
+  },
+  {
+    "id": "3091",
+    "resource": "Источники энергии",
+    "source_name": "Угольный пласт",
+    "href": "https://www.pwdatabase.com/mine/3091",
+    "tier": "3",
+    "name": "Каменный уголь",
+    "ukrName": "Кам'яне вугілля",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/817.png"
+  },
+  {
     "id": "3100",
     "resource": "Травы",
     "source_name": "Белена",
@@ -340,6 +300,46 @@
     "image": "https://www.pwdatabase.com/images/icons/generalm/1835.png"
   },
   {
+    "id": "3077",
+    "resource": "Древесина",
+    "source_name": "Грушевый брус",
+    "href": "https://www.pwdatabase.com/mine/3077",
+    "tier": "4",
+    "name": "Качественная древесина",
+    "ukrName": "Якісна деревина",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/798.png"
+  },
+  {
+    "id": "3082",
+    "resource": "Металл",
+    "source_name": "Магнитный железняк",
+    "href": "https://www.pwdatabase.com/mine/3082",
+    "tier": "4",
+    "name": "Сплавленная сталь",
+    "ukrName": "Сплавлена сталь",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/803.png"
+  },
+  {
+    "id": "3087",
+    "resource": "Камень",
+    "source_name": "Алмазный карьер",
+    "href": "https://www.pwdatabase.com/mine/3087",
+    "tier": "4",
+    "name": "Алмазный порошок",
+    "ukrName": "Алмазний порошок",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/808.png"
+  },
+  {
+    "id": "3092",
+    "resource": "Источники энергии",
+    "source_name": "Залежи вулканического угля",
+    "href": "https://www.pwdatabase.com/mine/3092",
+    "tier": "4",
+    "name": "Углеродное топливо",
+    "ukrName": "Вуглецеве паливо",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/818.png"
+  },
+  {
     "id": "3549",
     "resource": "Травы",
     "source_name": "Тюльпан",
@@ -398,5 +398,95 @@
     "name": "Палочник",
     "ukrName": "Паличник",
     "image": "https://www.pwdatabase.com/images/icons/generalm/1854.png"
+  },
+  {
+    "id": "3078",
+    "resource": "Древесина",
+    "source_name": "Жердь из драконьей кости",
+    "href": "https://www.pwdatabase.com/mine/3078",
+    "tier": "5",
+    "name": "Отборное дерево",
+    "ukrName": "Відбірне дерево",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/799.png"
+  },
+  {
+    "id": "3083",
+    "resource": "Металл",
+    "source_name": "Залежи метеоритного железа",
+    "href": "https://www.pwdatabase.com/mine/3083",
+    "tier": "5",
+    "name": "Отборный сплав стали",
+    "ukrName": "Відбірний сплав сталі",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/804.png"
+  },
+  {
+    "id": "3088",
+    "resource": "Камень",
+    "source_name": "Залежи графита",
+    "href": "https://www.pwdatabase.com/mine/3088",
+    "tier": "5",
+    "name": "Карборунд",
+    "ukrName": "Карборунд",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/809.png"
+  },
+  {
+    "id": "3093",
+    "resource": "Источники энергии",
+    "source_name": "Залежи лавового угля",
+    "href": "https://www.pwdatabase.com/mine/3093",
+    "tier": "5",
+    "name": "Чистое углеродное топливо",
+    "ukrName": "Чисте вуглецеве паливо",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/819.png"
+  },
+  {
+    "id": "3544",
+    "resource": "Травы",
+    "source_name": "Жук Девяти ароматов",
+    "href": "https://www.pwdatabase.com/mine/3544",
+    "tier": "5",
+    "name": "Жук Девяти ароматов",
+    "ukrName": "Жук Девяти ароматів",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/1855.png"
+  },
+  {
+    "id": "3553",
+    "resource": "Травы",
+    "source_name": "Эссенция просвещения",
+    "href": "https://www.pwdatabase.com/mine/3553",
+    "tier": "5",
+    "name": "Эссенция просвещения",
+    "ukrName": "Есенція просвітлення",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/1842.png"
+  },
+  {
+    "id": "3552",
+    "resource": "Травы",
+    "source_name": "Трава картежника",
+    "href": "https://www.pwdatabase.com/mine/3552",
+    "tier": "5",
+    "name": "Трава картежника",
+    "ukrName": "Трава картежника",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/1828.png"
+  },
+  {
+    "id": "3547",
+    "resource": "Травы",
+    "source_name": "Белая слива",
+    "href": "https://www.pwdatabase.com/mine/3547",
+    "tier": "5",
+    "name": "Белая слива",
+    "ukrName": "Біла слива",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/1852.png"
+  },
+  {
+    "id": "3551",
+    "resource": "Травы",
+    "source_name": "Жасминный апельсин",
+    "href": "https://www.pwdatabase.com/mine/3551",
+    "tier": "5",
+    "name": "Жасминный апельсин",
+    "ukrName": "Жасминовий апельсин",
+    "image": "https://www.pwdatabase.com/images/icons/generalm/1841.png"
   }
 ]
